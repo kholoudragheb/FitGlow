@@ -1,0 +1,13 @@
+{
+  "name": "fitglow-api-tests",
+  "version": "1.0.0",
+  "description": "FitGlow backend API test suite",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:report": "npx playwright test --reporter=html",
+    "test:headed": "npx playwright test --headed"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0"
+  }
+}
