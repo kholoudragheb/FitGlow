@@ -1,16 +1,190 @@
-# fit_app
+# 🏋️‍♂️ GymUnity - Next-Gen Fitness & Coaching Platform
 
-A new Flutter project.
+[![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white)](https://flutter.dev/)
+[![Dart](https://img.shields.io/badge/Dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white)](https://dart.dev/)
+[![State Management](https://img.shields.io/badge/State_Management-BLoC_%26_Provider-blueviolet?style=for-the-badge)](https://pub.dev/packages/flutter_bloc)
+[![License](https://img.shields.io/badge/license-MIT-green.style=for-the-badge)](#license)
 
-## Getting Started
+**GymUnity** (FitGlow) is a modern, cross-platform mobile and web application built with **Flutter** that bridges the gap between personal fitness coaches and clients. It provides a complete digital ecosystem for tracking workouts, customizing nutrition plans, managing client-coach requests, scheduling training sessions, and leveraging AI-powered fitness assistance.
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## 📌 Table of Contents
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- [✨ Key Features](#-key-features)
+- [👥 User Roles](#-user-roles)
+  - [🏋️‍♂️ Coach Role](#️-coach-role)
+  - [🏃‍♂️ Client Role](#️-client-role)
+- [📸 Screenshots Showcase](#-screenshots-showcase)
+  - [Coach Experience](#coach-experience)
+  - [Client Experience](#client-experience)
+- [🛠️ Tech Stack & Architecture](#️-tech-stack--architecture)
+- [📂 Project Directory Structure](#-project-directory-structure)
+- [🚀 Local Setup & Installation](#-local-setup--installation)
+- [📡 Backend & API Integration](#-backend--api-integration)
+- [🤝 Contributing & License](#-contributing--license)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## ✨ Key Features
+
+- **Dual-Role Architecture**: Specialized workflows and dashboards tailored for both **Coaches** and **Clients**.
+- **Interactive Onboarding & Assessment**: Customized profile onboarding capturing fitness goals, experience levels, training locations, and dietary preferences.
+- **Workout & Fitness Hub**: Exercise library with interactive video player, category filtering, and workout intensity tracking.
+- **Nutrition & Meal Management**: Calorie tracking, macro breakdown, and customized meal plan creation.
+- **Coach-Client Connectivity**: Direct booking system, request management, and real-time chat.
+- **AI Fitness Assistant**: AI-powered chatbot (`AIChatCubit`) providing instant workout advice and meal recommendations.
+- **Gym Store & Merch Hub**: Built-in store browsing, shopping cart, and order checkout flow.
+
+---
+
+## 👥 User Roles
+
+### 🏋️‍♂️ Coach Role
+- **Coach Dashboard**: View active client numbers, pending training requests, daily schedule, and revenue stats.
+- **Request Management**: Review incoming client applications, accept or decline coaching requests.
+- **Custom Plan Creation**: Design tailored workout routines and nutrition meal plans for individual clients.
+- **Client Communication**: Instant messaging and notification dispatching to active trainees.
+- **Profile & Credential Showcase**: Highlight certifications, specialization areas, and bio.
+
+### 🏃‍♂️ Client Role
+- **Client Dashboard**: Personalized home feed showing daily goals, active workout plans, and streak metrics.
+- **Coach Directory & Booking**: Browse top-rated coaches, view detailed profiles, check availability, and book sessions.
+- **Progress & Metrics Tracker**: Log weight, body measurements, and fitness progress over time.
+- **Workout Execution**: Step-by-step exercise guides with interactive progress logs.
+- **Store & Checkout**: Purchase fitness gear, supplements, and digital plans.
+- **AI Fitness Bot**: Instant automated Q&A for training routines and nutrition inquiries.
+
+---
+
+## 📸 Screenshots Showcase
+
+### Coach Experience
+
+| Coach Dashboard | Profile & Credentials |
+| :---: | :---: |
+| ![Coach Dashboard](./screenshots/coach/01_coach_dashboard.png) | ![Coach Profile](./screenshots/coach/02_coach_profile_info.png) |
+
+| Coach Notifications | Role Selection |
+| :---: | :---: |
+| ![Notifications](./screenshots/coach/03_coach_notifications.png) | ![Role Selection](./screenshots/coach/04_role_selection.png) |
+
+---
+
+### Client Experience
+
+| Client Dashboard | Authentication |
+| :---: | :---: |
+| ![Client Dashboard](./screenshots/client/01_client_dashboard.png) | ![Login Screen](./screenshots/client/02_client_login.png) |
+
+| Sign Up Flow | Onboarding & Profile Setup |
+| :---: | :---: |
+| ![Sign Up](./screenshots/client/03_client_signup.png) | ![Profile Setup](./screenshots/client/04_client_profile_setup.png) |
+
+---
+
+## 🛠️ Tech Stack & Architecture
+
+- **Framework**: [Flutter](https://flutter.dev/) (SDK ^3.10.0)
+- **Language**: [Dart](https://dart.dev/)
+- **State Management**: Dual architecture using `flutter_bloc` (Cubit pattern) and `provider`
+- **Networking & API**: `dio` (^5.9.2) & `http` (^1.6.0) for RESTful API services
+- **UI Components**:
+  - `google_fonts` (Poppins & modern typography)
+  - `flutter_svg` for crisp vector assets
+  - `fl_chart` for progress charts and analytics
+  - `shimmer` for skeleton loading states
+  - `lottie` for animations
+- **Local Storage**: `shared_preferences` (^2.5.4)
+
+---
+
+## 📂 Project Directory Structure
+
+```text
+GymUnity/
+├── android/                   # Android native configuration
+├── ios/                       # iOS native configuration
+├── web/                       # Web entrypoint and platform assets
+├── screenshots/               # Application screenshot showcase
+│   ├── coach/                 # Coach flow screenshots
+│   └── client/                # Client flow screenshots
+├── assets/                    # Platform icons and app logos
+├── lib/
+│   ├── assets/                # App images, vector graphics, and icons
+│   ├── logic/
+│   │   └── cubits/            # BLoC/Cubit state management (Chat, Workout, Store, Nutrition)
+│   ├── models/                # Data models (Client, Coach, Workout, Order, Request)
+│   ├── providers/             # Provider state classes (SubscriptionProvider)
+│   ├── screens/               # UI Screens
+│   │   ├── client/            # Client-specific screens (Booking, Progress, Requests)
+│   │   ├── coach/             # Coach-specific screens (Requests, Plans, Chats, Schedule)
+│   │   ├── nutrition/         # Meal and diet plan views
+│   │   ├── profile/           # Profile edit & personal details
+│   │   ├── store/             # Gym store & checkout screens
+│   │   └── workout/           # Exercise player & workout categories
+│   ├── services/              # API and backend service layers (User, Coach, Chat, Store)
+│   ├── widgets/               # Reusable UI widgets
+│   └── main.dart              # Application entry point & route definitions
+├── pubspec.yaml               # Package dependencies & asset declarations
+└── README.md                  # Repository documentation
+```
+
+---
+
+## 🚀 Local Setup & Installation
+
+### Prerequisites
+
+- [Flutter SDK](https://docs.flutter.dev/get-started/install) (v3.10.0 or higher)
+- [Dart SDK](https://dart.dev/get-started)
+- Android Studio / VS Code with Flutter extension
+
+### Step-by-Step Setup
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/kholoudragheb/GymUnity.git
+   cd GymUnity
+   ```
+
+2. **Install Dependencies**:
+   ```bash
+   flutter pub get
+   ```
+
+3. **Run the Application**:
+   - For **Chrome (Web)**:
+     ```bash
+     flutter run -d chrome
+     ```
+   - For **Android / iOS Device**:
+     ```bash
+     flutter run
+     ```
+   - For **Windows Desktop**:
+     ```bash
+     flutter run -d windows
+     ```
+
+---
+
+## 📡 Backend & API Integration
+
+GymUnity interfaces with a RESTful backend API service using **Dio** and HTTP clients located in `lib/services/`.
+
+- **User Authentication**: Login, Sign Up, OTP Verification, Password Reset.
+- **Coach & Client Services**: Fetching coach availability, submitting coaching requests, managing client logs.
+- **Workout & Store APIs**: Fetching workout categories, exercise details, store products, and processing orders.
+
+---
+
+## 📄 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+---
+
+<p center>
+  Made with ❤️ for the Fitness Community by <b>GymUnity Team</b>.
+</p>
