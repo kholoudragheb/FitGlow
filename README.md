@@ -65,9 +65,9 @@
 | :---: | :---: | :---: |
 | ![Coach Dashboard](./screenshots/coach/01_coach_dashboard.png) | ![Coach Profile](./screenshots/coach/02_coach_profile.png) | ![Client Management](./screenshots/coach/03_client_management.png) |
 
-| Direct Client Chat | Coach Notifications | Role Selection |
-| :---: | :---: | :---: |
-| ![Client Chat](./screenshots/coach/05_client_coach_chat.png) | ![Notifications](./screenshots/coach/03_coach_notifications.png) | ![Role Selection](./screenshots/coach/04_role_selection.png) |
+| Direct Client Chat | Role Selection |
+| :---: | :---: |
+| ![Client Chat](./screenshots/coach/05_client_coach_chat.png) | ![Role Selection](./screenshots/coach/04_role_selection.png) |
 
 ---
 
@@ -84,14 +84,6 @@
 | Client Profile | AI Fitness Coach Chat |
 | :---: | :---: |
 | ![Client Profile](./screenshots/client/01_client_profile.png) | ![AI Coach Chat](./screenshots/client/05_ai_coach_chat.png) |
-
-| Client Dashboard | Authentication |
-| :---: | :---: |
-| ![Client Dashboard](./screenshots/client/01_client_dashboard.png) | ![Login Screen](./screenshots/client/02_client_login.png) |
-
-| Sign Up Flow | Onboarding & Profile Setup |
-| :---: | :---: |
-| ![Sign Up](./screenshots/client/03_client_signup.png) | ![Profile Setup](./screenshots/client/04_client_profile_setup.png) |
 
 ---
 
