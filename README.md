@@ -65,13 +65,21 @@
 | :---: | :---: | :---: |
 | ![Coach Dashboard](./screenshots/coach/01_coach_dashboard.png) | ![Coach Profile](./screenshots/coach/02_coach_profile.png) | ![Client Management](./screenshots/coach/03_client_management.png) |
 
-| Coach Notifications | Role Selection |
-| :---: | :---: |
-| ![Notifications](./screenshots/coach/03_coach_notifications.png) | ![Role Selection](./screenshots/coach/04_role_selection.png) |
+| Direct Client Chat | Coach Notifications | Role Selection |
+| :---: | :---: | :---: |
+| ![Client Chat](./screenshots/coach/05_client_coach_chat.png) | ![Notifications](./screenshots/coach/03_coach_notifications.png) | ![Role Selection](./screenshots/coach/04_role_selection.png) |
 
 ---
 
 ### Client Experience
+
+| Workout Library | Nutrition Library |
+| :---: | :---: |
+| ![Workout Library](./screenshots/client/09_workout_library.png) | ![Nutrition Library](./screenshots/client/08_nutrition_library.png) |
+
+| Gym Store Product | Shopping Cart & Checkout |
+| :---: | :---: |
+| ![Product Detail](./screenshots/client/07_product_detail.png) | ![My Cart](./screenshots/client/06_shopping_cart.png) |
 
 | Client Profile | AI Fitness Coach Chat |
 | :---: | :---: |
