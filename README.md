@@ -1,11 +1,11 @@
-# 🏋️‍♂️ GymUnity - Next-Gen Fitness & Coaching Platform
+# 🏋️‍♂️ FitGlow - Next-Gen Fitness & Coaching Platform
 
 [![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white)](https://flutter.dev/)
 [![Dart](https://img.shields.io/badge/Dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white)](https://dart.dev/)
 [![State Management](https://img.shields.io/badge/State_Management-BLoC_%26_Provider-blueviolet?style=for-the-badge)](https://pub.dev/packages/flutter_bloc)
 [![License](https://img.shields.io/badge/license-MIT-green.style=for-the-badge)](#license)
 
-**GymUnity** (FitGlow) is a modern, cross-platform mobile and web application built with **Flutter** that bridges the gap between personal fitness coaches and clients. It provides a complete digital ecosystem for tracking workouts, customizing nutrition plans, managing client-coach requests, scheduling training sessions, and leveraging AI-powered fitness assistance.
+**FitGlow** is a modern, cross-platform mobile and web application built with **Flutter** that bridges the gap between personal fitness coaches and clients. It provides a complete digital ecosystem for tracking workouts, customizing nutrition plans, managing client-coach requests, scheduling training sessions, and leveraging AI-powered fitness assistance.
 
 ---
 
@@ -41,19 +41,19 @@
 ## 👥 User Roles
 
 ### 🏋️‍♂️ Coach Role
-- **Coach Dashboard**: View active client numbers, pending training requests, daily schedule, and revenue stats.
-- **Request Management**: Review incoming client applications, accept or decline coaching requests.
+- **Coach Dashboard**: View active client numbers, pending training requests, daily schedule, and activity metrics.
+- **Client Management**: Filter and review clients, view details, switch between active clients and training requests.
+- **Coach Profile & Credentials**: Show experience years, ratings, specialization tags (Weight Loss, Muscle Gain, etc.), and bio details.
 - **Custom Plan Creation**: Design tailored workout routines and nutrition meal plans for individual clients.
 - **Client Communication**: Instant messaging and notification dispatching to active trainees.
-- **Profile & Credential Showcase**: Highlight certifications, specialization areas, and bio.
 
 ### 🏃‍♂️ Client Role
-- **Client Dashboard**: Personalized home feed showing daily goals, active workout plans, and streak metrics.
+- **Client Dashboard & Profile**: Detailed physical stats (age, weight, height), saved items, progress chart, and subscription plan status.
+- **AI Fitness Assistant**: Interactive AI Coach chatbot for instant workout planning and nutrition guidance.
 - **Coach Directory & Booking**: Browse top-rated coaches, view detailed profiles, check availability, and book sessions.
 - **Progress & Metrics Tracker**: Log weight, body measurements, and fitness progress over time.
 - **Workout Execution**: Step-by-step exercise guides with interactive progress logs.
 - **Store & Checkout**: Purchase fitness gear, supplements, and digital plans.
-- **AI Fitness Bot**: Instant automated Q&A for training routines and nutrition inquiries.
 
 ---
 
@@ -61,9 +61,9 @@
 
 ### Coach Experience
 
-| Coach Dashboard | Profile & Credentials |
-| :---: | :---: |
-| ![Coach Dashboard](./screenshots/coach/01_coach_dashboard.png) | ![Coach Profile](./screenshots/coach/02_coach_profile_info.png) |
+| Coach Dashboard | Coach Profile | Client Management |
+| :---: | :---: | :---: |
+| ![Coach Dashboard](./screenshots/coach/01_coach_dashboard.png) | ![Coach Profile](./screenshots/coach/02_coach_profile.png) | ![Client Management](./screenshots/coach/03_client_management.png) |
 
 | Coach Notifications | Role Selection |
 | :---: | :---: |
@@ -72,6 +72,10 @@
 ---
 
 ### Client Experience
+
+| Client Profile | AI Fitness Coach Chat |
+| :---: | :---: |
+| ![Client Profile](./screenshots/client/01_client_profile.png) | ![AI Coach Chat](./screenshots/client/05_ai_coach_chat.png) |
 
 | Client Dashboard | Authentication |
 | :---: | :---: |
@@ -102,7 +106,7 @@
 ## 📂 Project Directory Structure
 
 ```text
-GymUnity/
+FitGlow/
 ├── android/                   # Android native configuration
 ├── ios/                       # iOS native configuration
 ├── web/                       # Web entrypoint and platform assets
@@ -144,8 +148,8 @@ GymUnity/
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/kholoudragheb/GymUnity.git
-   cd GymUnity
+   git clone https://github.com/kholoudragheb/FitGlow.git
+   cd FitGlow
    ```
 
 2. **Install Dependencies**:
@@ -171,7 +175,7 @@ GymUnity/
 
 ## 📡 Backend & API Integration
 
-GymUnity interfaces with a RESTful backend API service using **Dio** and HTTP clients located in `lib/services/`.
+FitGlow interfaces with a RESTful backend API service using **Dio** and HTTP clients located in `lib/services/`.
 
 - **User Authentication**: Login, Sign Up, OTP Verification, Password Reset.
 - **Coach & Client Services**: Fetching coach availability, submitting coaching requests, managing client logs.
@@ -185,6 +189,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
 
-<p center>
-  Made with ❤️ for the Fitness Community by <b>GymUnity Team</b>.
+<p align="center">
+  Made with ❤️ for the Fitness Community by <b>FitGlow Team</b>.
 </p>
